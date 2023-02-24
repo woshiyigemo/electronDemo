@@ -1,0 +1,29 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx electron index.js",
+    "serve": "npx nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woshiyigemo/electronDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woshiyigemo/electronDemo/issues"
+  },
+  "homepage": "https://github.com/woshiyigemo/electronDemo#readme",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "nodemon": "^2.0.20"
+  }
+}

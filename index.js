@@ -18,7 +18,7 @@ app.on('ready', () => {
       //     contextIsolation: false,
       // }
       webPreferences: {
-        devTools:true,
+        // devTools:true,
         preload: path.join(__dirname, './src/js/preload.js'), 
       }
     })
@@ -94,11 +94,11 @@ app.on('ready', () => {
   ]
   
   const myMenu = Menu.buildFromTemplate(menuTemplate) 
-  // Menu.setApplicationMenu(myMenu)
+  Menu.setApplicationMenu(myMenu)
 
   //窗口加载html文件
   mwin.loadFile('./src/index.html')
-  mwin.webContents.openDevTools({mode:'right'})
+  // mwin.webContents.openDevTools({mode:'right'})
   console.log("加载index.html页面成功")
 
   // 托盘
